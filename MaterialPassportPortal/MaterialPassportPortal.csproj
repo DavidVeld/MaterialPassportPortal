@@ -55,6 +55,12 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ApplyForPassport.cs" />
+    <Compile Include="ApplyForPassportDialog.xaml.cs">
+      <DependentUpon>ApplyForPassportDialog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="data\mpProperty.cs" />
+    <Compile Include="data\mpElement.cs" />
     <Compile Include="SetParameters.cs" />
     <Compile Include="MaterialPassportMenu.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -63,6 +69,10 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Page Include="ApplyForPassportDialog.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="ImportParams.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -77,6 +87,12 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="img\ico_Passport32.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ParameterList.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Shared Parameters File_MaterialPassport.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
